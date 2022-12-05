@@ -1,5 +1,7 @@
 package com.gendalf.firstproj;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -38,27 +40,30 @@ public class Main {
         } else if (n > v && n > l) {
             System.out.println(n);
         }
-        char p = 72;{
-            System.out.println(p);
+        char p = 65;
+        System.out.println(p);
+        char dd = 97;
+        System.out.println(dd);
+        System.out.println(dd + 32);
+        Scanner scanner = new Scanner(System.in);
+        char ccc = scanner.next().charAt(0);
+        int a = ccc;
+        if (65 < a && a < 90) {
+            a+=32;
+            System.out.println((char)a);
+        } else if (97 < a && a < 122) {
+            a-=32;
+            System.out.println((char)a);
         }
-        int k = p;{
-            System.out.println(k);
-        }
 
 
 
+    }
 
-
-
-
-
-        }
-
-
-        ;
-
-
-        // Найти большее из 3 чисел
-        // Из заглавной сделать мальенькую,из маленькой заглавную
-        // из 4 знач числа вывести 2 последние цифры
 }
+
+
+// Найти большее из 3 чисел
+// Из заглавной сделать мальенькую,из маленькой заглавную
+// из 4 знач числа вывести 2 последние цифры
+
