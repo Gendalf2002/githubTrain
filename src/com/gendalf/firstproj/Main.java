@@ -30,31 +30,33 @@ public class Main {
 //        } else {
 //            System.out.println("geg");
 //        }
-        int v = 2;
-        int l = 3;
-        int n = 5;
-        if (v > l && v > n) {
-            System.out.println(v);
-        } else if (l > v && l > n) {
-            System.out.println(l);
-        } else if (n > v && n > l) {
-            System.out.println(n);
-        }
-        char p = 65;
-        System.out.println(p);
-        char dd = 97;
-        System.out.println(dd);
-        System.out.println(dd + 32);
-        Scanner scanner = new Scanner(System.in);
-        char ccc = scanner.next().charAt(0);
-        int a = ccc;
-        if (65 < a && a < 90) {
-            a+=32;
-            System.out.println((char)a);
-        } else if (97 < a && a < 122) {
-            a-=32;
-            System.out.println((char)a);
-        }
+//        int v = 2;
+//        int l = 3;
+//        int n = 5;
+//        if (v > l && v > n) {
+//            System.out.println(v);
+//        } else if (l > v && l > n) {
+//            System.out.println(l);
+//        } else if (n > v && n > l) {
+//            System.out.println(n);
+//        }
+//        char p = 65;
+//        System.out.println(p);
+//        char dd = 97;
+//        System.out.println(dd);
+//        System.out.println(dd + 32);
+//        Scanner scanner = new Scanner(System.in);
+//        char ccc = scanner.next().charAt(0);
+//        int a = ccc;
+//        if (65 < a && a < 90) {
+//            a += 32;
+//            System.out.println((char) a);
+//        } else if (97 < a && a < 122) {
+//            a -= 32;
+//            System.out.println((char) a);
+//      }
+        int k = 1280 % 100;
+        System.out.println(k);
 
 
 
