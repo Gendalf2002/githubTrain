@@ -11,8 +11,9 @@ public class Main {
     public static void main(String[] args) {
 //        countNumbers(0,10000);
 //        printAlphabet();
-        power(2,4);
+//        power(2,4);
 //        //1
+        countNumbers();
 //        int v = 2;
 //        int l = 3;
 //        int n = 5;
@@ -55,28 +56,40 @@ public class Main {
     public static void countNumbers(int start, int end) {
         int soum = 0;
         for (int i = start; i <= end; i++) {
-            soum =soum + i;
-            System.out.println(i+" "+soum);
+            soum = soum + i;
+            System.out.println(i + " " + soum);
         }
     }
-    public static void printAlphabet(){
+
+    public static void printAlphabet() {
         int a = 65;
         int o = 97;
-        for(int i = 0;i<26;i++){
-            System.out.println((char)(a+i)+" "+(char)(o+i)  );
+        for (int i = 0; i < 26; i++) {
+            System.out.println((char) (a + i) + " " + (char) (o + i));
         }
     }
-    public static void power(int a,int pow){
+
+    public static void power(int a, int pow) {
         int result = a;
-        for (int i = 1;i<=pow;i++){
+        for (int i = 1; i <= pow; i++) {
             System.out.println(result);
-            result = a * result ;
+            result = a * result;
         }
     }
-    //таблица умножения на 3
-    //найти кол-во отрицательных чисел , ввод с клавиатуры
-    // 3%-вклад положили s руб . какой станет сумма вклада через n-лет
+
+
+    public static void countNumbers() {
+        for (int i = 0; i <= 10; i++) {
+            int sum = 0;
+            sum += i * 3;
+            System.out.print(i + "*" + "3" + "=" + sum +" ");
+        }
+    }
 }
+//таблица умножения на 3
+//найти кол-во отрицательных чисел , ввод с клавиатуры
+// 3%-вклад положили s руб . какой станет сумма вклада через n-лет
+
 
 
 
