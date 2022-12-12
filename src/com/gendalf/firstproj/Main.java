@@ -1,6 +1,5 @@
 package com.gendalf.firstproj;
 
-import java.net.PortUnreachableException;
 import java.util.Scanner;
 
 public class Main {
@@ -19,7 +18,10 @@ public class Main {
 //        power(2,4);
 //        //1
 //        countNumbers();
+//        System.out.println(fibNum(20));
+        nummm(9);
 //        countNumbers();
+
 //        int v = 2;
 //        int l = 3;
 //        int n = 5;
@@ -35,7 +37,7 @@ public class Main {
 //        int k = scanner.nextInt();
 //        findLustNumber(k);
 //    }
-        searchFebanach();
+
 //    public static int findMaxNumber(int g, int y, int pp) {
 //        int max = Integer.MIN_VALUE;
 //        if (g > pp && g > y) {
@@ -136,28 +138,35 @@ public class Main {
 //        System.out.println(g + " " + h + " ");
 //        for (int i = 3; i <= 11; i++) {
 //            v = g + h;
+
 //            System.out.print(v);
 //            g = h;
 //            h = v;
 //            System.out.println();
+
 //        }
 //    }
-    public static void searchFebanach() {
-        int g = 1;
-        int h = 1;
-        int v;
-        int hh;
-        System.out.println(g + " " + h + " ");
-        for (int i = 3; i <= 11; i++) {
-            v = g + h;
-            System.out.print(v);
-            g = h;
-            h = v;
-            System.out.println();
+
+    public static int fibNum(int n) {
+        if (n == 1 || n == 0)
+            return n;
+        return fibNum(n - 1) + fibNum(n - 2);
 
 
+    }
 
+    public static void nummm(int v) {
+        int foll = 5;
+        while (foll < 10) {
+            System.out.println(foll);
+            foll++;
+            if (foll == v) {
+                break;
+
+
+            }
         }
+
     }
 }
 
